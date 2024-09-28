@@ -1,0 +1,23 @@
+name: Deploy para Hostinger
+
+on:
+  push:
+    branches:
+      - main  # Gatilho para rodar sempre que houver um push na branch main
+
+jobs:
+  ftp-deploy:
+    runs-on: ubuntu-latest
+    steps:
+    - name: Clonar repositório
+      uses: actions/checkout@v2
+
+    - name: Deploy via FTP
+      uses: SamKirkland/FTP-Deploy-Action@4.3.0
+      with:
+        server: ftp://185.213.81.199  # Substitua pelo seu servidor FTP
+        username: ${{ secrets.FTP_USERNAME }}  # Definiremos essas variáveis secretas depois
+        password: ${{ secrets.FTP_PASSWORD }}
+        local-dir: ./  # A pasta local que será enviada (raiz do projeto)
+        server-dir: /public_html  # O diretório no servidor onde os arquivos devem ser enviados
+        protocol: ftps  # Para usar FTPS ao invés de FTP
