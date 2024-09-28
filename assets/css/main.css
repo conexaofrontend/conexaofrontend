@@ -1,0 +1,113 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:ital,wght@0,300..900;1,300..900&display=swap');
+
+* {
+    font-family: "Red Hat Display", sans-serif;
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+h1, h2, h3, h4, h5, h6 {
+    font-weight: bold;
+}
+:root {
+    --dark: #242424;
+    --blue: #006BCD;
+    --white: #fff;
+}
+
+/* GLOBAL */
+/* GLOBAL */
+/* GLOBAL */
+.d-flex {
+    display: flex;
+}
+.flex-center {
+    align-items: center;
+}
+.flex-start {
+    align-items: start;
+}
+.flex-end {
+    align-items: end;
+}
+.flex-content-center {
+    justify-content: center;
+}
+.flex-content-between {
+    justify-content: space-between;
+}
+.flex-content-around {
+    justify-content: space-around;
+}
+.flex-content-start {
+    justify-content: start;
+}
+.flex-content-end {
+    justify-content: end;
+}
+.flex-column {
+    flex-direction: column;
+}
+.flex-wrap {
+    flex-wrap: wrap;
+}
+.gap-2 {
+gap:2px;
+}
+.gap-4 {
+gap:4px;
+}
+.gap-10 {
+gap:10px;
+}
+.gap-16 {
+gap:16px;
+}
+.gap-20 {
+gap:20px;
+}
+.gap-28{
+gap:28px;
+}
+.gap-32{
+gap:32px;
+}
+.gap-64 {
+gap:64px;
+}
+
+.color-dark {
+    color: var(--dark);
+}
+.color-blue {
+    color: var(--blue);
+}
+.color-white {
+    color: var(--white);
+}
+
+
+
+
+/* RESPONSIVIDADE */
+
+/* DESKTOP LARGE */
+@media screen and (max-width:1280px) {
+    
+}
+/* DESKTOP SMALL  */
+@media screen and (max-width:1024px) {
+    
+}
+/* TABLET */
+@media screen and (max-width:768px) {
+    
+}
+/* MOBILE */
+@media screen and (max-width:475px) {
+    
+}
+/* MOBILE SMALL */
+@media screen and (max-width:375px) {
+    
+}
